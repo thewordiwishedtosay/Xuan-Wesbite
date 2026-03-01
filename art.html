@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuan Tang | Digital Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>XUAN TANG</h1>
+        <nav>
+            <a href="index.html">Prototypes</a>
+            <a href="art.html" class="active">Digital Art</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="grid" id="art-grid">
+            <div class="grid-item art-card" onclick="openLightbox('images/art1.jpg')">
+                <div class="image-container">
+                    <img src="images/art1.jpg" alt="Digital Art 1">
+                </div>
+                <p>Composition I</p>
+            </div>
+            
+            <div class="grid-item art-card" onclick="openLightbox('images/art2.jpg')">
+                <div class="image-container">
+                    <img src="images/art2.jpg" alt="Digital Art 2">
+                </div>
+                <p>Generative Study</p>
+            </div>
+
+            </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightbox-img').src = src;
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
