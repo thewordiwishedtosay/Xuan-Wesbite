@@ -1,0 +1,42 @@
+body {
+    font-family: 'Helvetica', sans-serif; /* Clean, modern feel */
+    margin: 0;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    color: #2b3a8c; /* Mimicking the blue tint in your reference */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s;
+}
+
+.grid-item:hover {
+    opacity: 0.7;
+}
+
+.grid-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Forces square images like the reference */
+    object-fit: cover;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
