@@ -76,3 +76,40 @@ nav a.active { color: #000; border-bottom: 1px solid #000; }
 @media (max-width: 600px) {
     .grid { grid-template-columns: 1fr; }
 }
+
+/* Art Card Styling */
+.art-card {
+    cursor: pointer; /* Shows the user they can click it */
+}
+
+/* Lightbox Background */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* White overlay to match the aesthetic */
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Image inside the Lightbox */
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    font-weight: 200;
+    cursor: pointer;
+    color: #333;
+}
